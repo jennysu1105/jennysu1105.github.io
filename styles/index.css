@@ -1,0 +1,53 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    background: linear-gradient(
+        to right,
+        #bff0ff 0%,
+        #bff0ff 50%,
+        #ffffff 50%,
+        #ffffff 100%
+    )
+}
+nav {
+    font-weight: 400;
+}
+.p-2 {
+    width:50%;
+}
+
+.bio {
+    text-align: left;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.bio {
+    padding-left: 5%;
+}
+
+p{
+    font-size: 14px;
+}
+
+.profile {
+    background: linear-gradient(
+        to right,
+        #e8f7fc 0%,
+        #e8f7fc 50%,
+        #ffffff 50%,
+        #ffffff 100%
+    );
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    margin-top: 10%;
+    height: 70%
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
