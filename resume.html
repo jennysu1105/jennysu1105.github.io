@@ -11,16 +11,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/footer.js"></script>
-    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/resume.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
     <title>Resume</title>
+    
+    <script>
+        $(document).ready(() => {
+            function setHeader(xhr) {
+                xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+            }
+            let experience = document.getElementById('experiences');
+            $.ajax({
+                type: "GET",
+                url: 'https://jennysu1105.github.io/info/experience.json',
+                dataType: 'json',
+                success : function(data){
+                    console.log(data);
+                    $.each(data, function(exp, val){
+                        let period = '<h5 class="time">' + val['time'] + '</h5>';
+                        let position = '<p>' + val['position'] + '<p>';
+                        let company = '<p>' + val['company'] + '<p>';
+                        experience.innerHTML += '<div class="d-flex"><div>' + period + positon + company + '</div></div>';
+                    });
+                }
+            });
+        })
+    </script>
 </head>
 <body>
     <nav-bar></nav-bar>
-    <div class="container-fluid mainbody" style="margin-bottom: 10%">
-        <h1>Experience</h1>
-        <div class="container-fluid" id="projects"></div>
-        <h1>Education</h1>
-        <div class="container-fluid" id="education"></div>
+    <div class="container-fluid" style="margin-bottom: 10%">
+        <div class="row mainbody shadow p-3 my-5 bg-white rounded">
+            <h2 class="">Experience</h2>
+            <hr>
+            <div class="container-fluid" id="experiences"></div>
+        </div>
+        <div class="row mainbody shadow p-3 mb-5 bg-white rounded">
+            <h2>Education</h2>
+            <hr>
+            <div class="container-fluid" id="education"></div>
+        </div>
     </div>
     <footer-jenny></footer-jenny>
 </body>
