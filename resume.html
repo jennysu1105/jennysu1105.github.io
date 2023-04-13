@@ -26,13 +26,33 @@
                 url: 'https://jennysu1105.github.io/info/experience.json',
                 dataType: 'json',
                 success : function(data){
-                    console.log(data);
                     $.each(data, function(exp, val){
+                        console.log(val['position']);
                         let period = '<h5 class="time">' + val['time'] + '</h5>';
-                        let position = '<p>' + val['position'] + '</p>';
-                        let company = '<p>' + val['company'] + '</p>';
+                        let position = '<p class="position">' + val['position'].join("<br>") + '</p>';
+                        let company = '<p class="company">' + val['company'] + '</p>';
+                        let location = '<p class="location">' + val['location'] + "</p>";
                         let description = '<p>' + val['description'] + '</p>';
-                        experience.innerHTML += '<div class="d-flex"><div>' + period + positon + company + '</div><div>' + description + '</div>';
+                        let role = '<hr><ul><li>' + val['role'].join('</li><li>') + "</li></ul>";
+                        experience.innerHTML += '<div class="d-flex entry"><div class="head">' + period + position + company + location + '</div><div class="desc">' + description + role + '</div>';
+                    });
+                }
+            });
+
+            let education = document.getElementById('education');
+            $.ajax({
+                type: "GET",
+                url: 'https://jennysu1105.github.io/info/education.json',
+                dataType: 'json',
+                success : function(data){
+                    $.each(data, function(exp, val){
+                        console.log(val['position']);
+                        let period = '<h5 class="time">' + val['time'] + '</h5>';
+                        let name = '<p class="position">' + val['name'] + '</p>';
+                        let school = '<p class="school">' + val['school'] + '</p>';
+                        let location = '<p class="location">' + val['location'] + "</p>";
+                        let description = '<p>' + val['description'] + '</p>';
+                        education.innerHTML += '<div class="d-flex entry"><div class="head">' + period + '</div><div class="desc">' + school + name + location + '</div>';
                     });
                 }
             });

@@ -8,3 +8,39 @@ div.mainbody {
 h2 {
     text-align: center;
 }
+
+div.head {
+    border-right: 1px solid darkblue;
+    padding: 10px;
+    width: 25%;
+}
+
+div.edu-head {
+    border-right: 1px solid darkblue;
+    padding: 10px;
+    width: 20%;
+}
+
+div.entry {
+    margin-bottom: 20px;
+}
+p.position {
+    font-size: 12px;
+}
+
+p.location {
+    margin-top: 2px;
+}
+p.company {
+    font-weight:500;
+    margin-bottom: 0px;
+}
+
+p.school {
+    font-weight:500;
+    margin-bottom: 0px;
+}
+div.desc {
+    margin-left: 5px;
+    padding: 10px;
+}
