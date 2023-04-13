@@ -31,7 +31,10 @@ h1 {
 p{
     font-size: 14px;
 }
-
+img {
+    width: 80%;
+    margin-left: 8%;
+}
 .nav-item:hover {
     background-color: lightgray;
 }

@@ -1,0 +1,16 @@
+[
+    {
+        "time": "2019 - Present",
+        "school" : "Toronto Metropolitan University",
+        "name" : "Computer Science Undergraduate Degree",
+        "location" : "Toronto, Ontario",
+        "description": ""
+    },
+    {
+        "time": "2015 - 2019",
+        "school" : "Dr. Norman Bethune Collegiate Institute",
+        "name" : "High School Diploma",
+        "location" : "Toronto, Ontario",
+        "description": ""
+    }
+]

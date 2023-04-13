@@ -1,0 +1,7 @@
+{
+    "professional": {
+        "front-end" : ["HTML, CSS, javascript", "React.js", "jQuery", "bootstrap"],
+        "back-end" : ["php", "ruby", "python", "perl", "SQL", "JSON"],
+        "UXUI" : ["Visual Basic .NET (VB.NET)", "Android Studio"]
+    }
+}
