@@ -29,9 +29,10 @@
                     console.log(data);
                     $.each(data, function(exp, val){
                         let period = '<h5 class="time">' + val['time'] + '</h5>';
-                        let position = '<p>' + val['position'] + '<p>';
-                        let company = '<p>' + val['company'] + '<p>';
-                        experience.innerHTML += '<div class="d-flex"><div>' + period + positon + company + '</div></div>';
+                        let position = '<p>' + val['position'] + '</p>';
+                        let company = '<p>' + val['company'] + '</p>';
+                        let description = '<p>' + val['description'] + '</p>';
+                        experience.innerHTML += '<div class="d-flex"><div>' + period + positon + company + '</div><div>' + description + '</div>';
                     });
                 }
             });
