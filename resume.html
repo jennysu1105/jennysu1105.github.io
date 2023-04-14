@@ -34,7 +34,13 @@
                         let location = '<p class="location">' + val['location'] + "</p>";
                         let description = '<p>' + val['description'] + '</p>';
                         let role = '<hr><ul><li>' + val['role'].join('</li><li>') + "</li></ul>";
-                        experience.innerHTML += '<div class="d-flex entry"><div class="head">' + period + position + company + location + '</div><div class="desc">' + description + role + '</div>';
+                        if (val['company'] === "VRulez"){
+                            let details = '<a href="/project.html?name=' + val['company'] + '"><button class="btn btn-primary btn-sm">More Details</button></a>';
+                            experience.innerHTML += '<div class="d-flex entry"><div class="head">' + period + position + company + location + details + '</div><div class="desc">' + description + role + '</div>';
+                        }
+                        else {
+                            experience.innerHTML += '<div class="d-flex entry"><div class="head">' + period + position + company + location + '</div><div class="desc">' + description + role + '</div>';
+                        }
                     });
                 }
             });
@@ -45,7 +51,7 @@
                 url: 'https://jennysu1105.github.io/info/education.json',
                 dataType: 'json',
                 success : function(data){
-                    $.each(data, function(exp, val){
+                    $.each(data, function(edu, val){
                         console.log(val['position']);
                         let period = '<h5 class="time">' + val['time'] + '</h5>';
                         let name = '<p class="position">' + val['name'] + '</p>';
@@ -54,6 +60,19 @@
                         let description = '<p>' + val['description'] + '</p>';
                         education.innerHTML += '<div class="d-flex entry"><div class="head">' + period + '</div><div class="desc">' + school + name + location + '</div>';
                     });
+                }
+            });
+
+            let skills = document.getElementById("skills");
+            $.ajax({
+                type: "GET",
+                url: 'https://jennysu1105.github.io/info/skills.json',
+                dataType: 'json',
+                success : function(data){
+                    let front = '<div class="col skill"><h5>Front-End</h5><ul><li>' + data['professional']['front-end'].join("</li><li>") + "</li></ul></div>";
+                    let back = '<div class="col skill"><h5>Back-End</h5><ul><li>' + data['professional']['back-end'].join("</li><li>") + "</li></ul></div>";
+                    let uxui = '<div class="col skill"><h5>UX/UI</h5><ul><li>' + data['professional']['UXUI'].join("</li><li>") + "</li></ul></div>";
+                    skills.innerHTML += '<h4>Professional</h4><hr>' + front + back + uxui;
                 }
             });
         })
@@ -71,6 +90,13 @@
             <h2>Education</h2>
             <hr>
             <div class="container-fluid" id="education"></div>
+        </div>
+        <div class="row mainbody shadow p-3 mb-5 bg-white rounded">
+            <h2>Skills</h2>
+            <hr>
+            <div class="container-fluid">
+                <div class="row" id="skills"></div>
+            </div>
         </div>
     </div>
     <footer-jenny></footer-jenny>
