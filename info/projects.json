@@ -1,0 +1,29 @@
+{
+    "Web Application Project" : {
+        "date" : "January 2023 - April 2023",
+        "tags" : ["Web Development", "Databases", "UX/UI"],
+        "group" : "4",
+        "members" : [""],
+        "desc" : "",
+        "goals" : "",
+        "status" : "Complete",
+        "res" : {
+            "languages" : ["HTML", "CSS", "javascript", "jQuery", "React.js", "MySQL", "php", "bootstrap"],
+            "host" : ["XAMPP"]
+        }
+    },
+
+    "VRulez" : {
+        "date" : "October 2019 - February 2020",
+        "tags" : ["Web Development", "Content Management System", "UX/UI"],
+        "group" : "2",
+        "members" : [""],
+        "desc" : "",
+        "goals" : "",
+        "status" : "Complete",
+        "res" : {
+            "languages" : ["Wix Code"],
+            "cms" : ["Wix"]
+        }
+    }
+}
