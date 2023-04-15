@@ -48,3 +48,21 @@ div.body {
     margin-left: 1%;
     width: 73%;
 }
+
+img {
+    width : 100%;
+    margin: 1.5%;
+}
+
+div.img {
+    width : 46%;
+    margin: 1.5%;
+    float:left;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

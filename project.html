@@ -75,7 +75,10 @@
                     });
 
                     let gallery = document.getElementById('images');
-                    gallery = '<img>' + project['images'].join('</img><img>') + '</img>';
+                    let src = "https://jennysu1105.github.io/res/" + name + "/";
+                    $.each(project['images'], function(i, val){
+                        gallery.innerHTML += '<div class="img"><figure><figcaption>' + val + '</figcaption><img id="gallery" src="' + src + val + '"></figure></div>';
+                    });
                 }
             });
         });
