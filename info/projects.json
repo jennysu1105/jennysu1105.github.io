@@ -10,7 +10,8 @@
         "res" : {
             "languages" : ["HTML", "CSS", "javascript", "jQuery", "React.js", "MySQL", "php", "bootstrap"],
             "host" : ["XAMPP"]
-        }
+        },
+        "images" : []
     },
 
     "VRulez" : {
@@ -24,6 +25,7 @@
         "res" : {
             "languages" : ["Wix Code"],
             "cms" : ["Wix"]
-        }
+        },
+        "images" : ["home.png", "gamelist.png", "gamelist_expanded.png", "locations.png", "press.png"]
     }
 }

@@ -35,7 +35,8 @@
                 "\t\t\"cms\" : [\"\"],",
                 "\t\t\"host\" : [\"\"]",
 				"\t}",
-				"}"
+				"},",
+			"\t\"images\" : []"
             ],
 		"description": "projects template"
     },
