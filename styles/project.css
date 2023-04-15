@@ -1,0 +1,50 @@
+div.mainbody {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+}
+button {
+    width: 100%;
+    margin-bottom:10px;
+    display: inline;
+}
+
+#name {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 900;
+}
+
+div.menu {
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    width: 25%;
+    right: 1%;
+}
+
+tr.line {
+    border-top: 1px solid black;
+}
+
+th,td {
+    padding: 10px;
+}
+
+th {
+    font-size: 14px;
+}
+
+li.menu {
+    font-size: 12px;
+}
+
+div.body {
+    margin-left: 1%;
+    width: 73%;
+}

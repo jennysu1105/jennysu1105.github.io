@@ -52,5 +52,22 @@
 		"<script src=\"scripts/footer.js\"></script>",
 		"<link href=\"styles/main.css\" rel=\"stylesheet\">"],
 		"description": "links, scripts and styles"
+	},
+
+	"ajax" : {
+		"prefix": "ajax",
+		"body": ["$.ajax({",
+		"\ttype: '',",
+		"\turl: 'https://jennysu1105.github.io/info/',",
+		"\tdataType: '',",
+		"\tsuccess : function(data){",
+		"\t}",
+		"});"]
+	},
+	
+	"ajax-each" : {
+		"prefix": "each",
+		"body" : ["$.each(data, function(i, val){",
+		"});"]
 	}
 }

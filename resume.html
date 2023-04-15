@@ -27,7 +27,6 @@
                 dataType: 'json',
                 success : function(data){
                     $.each(data, function(exp, val){
-                        console.log(val['position']);
                         let period = '<h5 class="time">' + val['time'] + '</h5>';
                         let position = '<p class="position">' + val['position'].join("<br>") + '</p>';
                         let company = '<p class="company">' + val['company'] + '</p>';
@@ -52,7 +51,6 @@
                 dataType: 'json',
                 success : function(data){
                     $.each(data, function(edu, val){
-                        console.log(val['position']);
                         let period = '<h5 class="time">' + val['time'] + '</h5>';
                         let name = '<p class="position">' + val['name'] + '</p>';
                         let school = '<p class="school">' + val['school'] + '</p>';
