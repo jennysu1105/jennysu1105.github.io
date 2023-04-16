@@ -50,14 +50,16 @@ div.body {
 }
 
 img {
-    width : 100%;
+    width : 96%;
     margin: 1.5%;
 }
 
 div.img {
-    width : 46%;
+    width : 47%;
     margin: 1.5%;
+    margin-bottom: 3%;
     float:left;
+    border: 1px solid #c7d0d4;
 }
 
 figcaption {

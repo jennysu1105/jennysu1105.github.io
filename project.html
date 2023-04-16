@@ -61,7 +61,16 @@
                     desc.innerHTML = project['desc'];
 
                     let goals = document.getElementById('goals');
-                    goals.innerHTML = project['goals'];
+                    $.each(project['goals'], function(i, val){
+                        goals.innerHTML += '<h5 class="goalsh">' + i + '</h5>';
+                        goals.innerHTML += '<p>' + val.join("<br>") + '</p>';
+                    });
+
+                    let learn = document.getElementById('learn');
+                    $.each(project['learning'], function(i, val){
+                        learn.innerHTML += '<h5 class="learnh">' + i + '</h5>';
+                        learn.innerHTML += '<p>' + val + '</p>';
+                    });
 
                     let res = document.getElementById('res');
                     $.each(project['res'], function(i, val){
@@ -77,7 +86,7 @@
                     let gallery = document.getElementById('images');
                     let src = "https://jennysu1105.github.io/res/" + name + "/";
                     $.each(project['images'], function(i, val){
-                        gallery.innerHTML += '<div class="img"><figure><figcaption>' + val + '</figcaption><img id="gallery" src="' + src + val + '"></figure></div>';
+                        gallery.innerHTML += '<div class="img shadow p-2 bg-white rounded"><figure><figcaption>' + val + '</figcaption><img id="gallery" src="' + src + val + '"></figure></div>';
                     });
                 }
             });
@@ -111,6 +120,9 @@
             <h4>Project Drescription</h4>
             <hr>
             <p id="description"></p>
+            <hr>
+            <h4>What I Learned</h4>
+            <p id="learn"></p>
         </div>
         <div class="row body shadow p-3 mb-1 bg-white rounded">
             <h4>Project Objective</h4>
@@ -125,7 +137,7 @@
         <div class="row body shadow p-3 mb-1 bg-white rounded">
             <h4>Gallery</h4>
             <hr>
-            <p id="images"></p>
+            <div id="images"></div>
         </div>
     </div>
     <footer-jenny></footer-jenny>

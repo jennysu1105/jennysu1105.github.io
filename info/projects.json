@@ -5,7 +5,8 @@
         "group" : "4",
         "members" : [""],
         "desc" : "",
-        "goals" : "",
+        "goals" : {},
+        "learning" : {},
         "status" : "Complete",
         "res" : {
             "languages" : ["HTML", "CSS", "javascript", "jQuery", "React.js", "MySQL", "php", "bootstrap"],
@@ -19,8 +20,9 @@
         "tags" : ["Web Development", "Content Management System", "UX/UI"],
         "group" : "2",
         "members" : [""],
-        "desc" : "",
-        "goals" : "",
+        "desc" : "VRulez is a Virtual Reality Cafe where customers can use machines to play VR games for a set amount of time. The purpose of this website is to provide information about the games available to play, create bookings, and view any information about the company and experience.",
+        "goals" : {"Design pages of the website": ["Organize the information into a visual appealing and inuitive way. I was tasked to design the game list page, home page, news page and locations page"], "Create a game list page" : ["Organize all the games into subcategories and display them."]},
+        "learning" : {"Experience using Content Management Systems (CMS)": "First experience creating and designing a website: Using a CMS is a good start to learning how to desgin a website's UX and UI. Changing the appearence of every element in a visual way (via drag/drop) is very straight forward.", "Teamwork in a company setting" : "Working with a more experienced co-op student was very helpful when working on a website for a company. We worked together well and shared our ideas."},
         "status" : "Complete",
         "res" : {
             "languages" : ["Wix Code"],
