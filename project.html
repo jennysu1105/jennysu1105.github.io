@@ -62,13 +62,13 @@
 
                     let goals = document.getElementById('goals');
                     $.each(project['goals'], function(i, val){
-                        goals.innerHTML += '<h5 class="goalsh">' + i + '</h5>';
+                        goals.innerHTML += '<h6 class="goalsh">' + i + '</h6>';
                         goals.innerHTML += '<p>' + val.join("<br>") + '</p>';
                     });
 
                     let learn = document.getElementById('learn');
                     $.each(project['learning'], function(i, val){
-                        learn.innerHTML += '<h5 class="learnh">' + i + '</h5>';
+                        learn.innerHTML += '<h6 class="learnh">' + i + '</h6>';
                         learn.innerHTML += '<p>' + val + '</p>';
                     });
 
@@ -86,10 +86,20 @@
                     let gallery = document.getElementById('images');
                     let src = "https://jennysu1105.github.io/res/" + name + "/";
                     $.each(project['images'], function(i, val){
-                        gallery.innerHTML += '<div class="img shadow p-2 bg-white rounded"><figure><figcaption>' + val + '</figcaption><img id="gallery" src="' + src + val + '"></figure></div>';
+                        gallery.innerHTML += '<div class="img shadow p-2 bg-white rounded"><figure><figcaption>' + val + '</figcaption><img class="gallery" id="gallery" src="' + src + val + '"></figure></div>';
                     });
                 }
             });
+        });
+    </script>
+    <script>
+        document.addEventListener("click", function(e){
+            if(e.target.classList.contains("gallery")){
+                document.querySelector(".modal-img").src = e.target.src;
+                document.querySelector(".modalh").innerHTML = e.target.src.replace("https://jennysu1105.github.io/res/", "");
+                const myModal = new bootstrap.Modal(document.getElementById('modal'));
+                myModal.show()
+            }
         });
     </script>
 </head>
@@ -140,6 +150,23 @@
             <h4>Gallery</h4>
             <hr>
             <div id="images"></div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <p class="modalh"></p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="" class="modal-img" alt="">
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
         </div>
     </div>
     <footer-jenny></footer-jenny>

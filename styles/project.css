@@ -68,3 +68,8 @@ figcaption {
     font-weight: 500;
     margin-bottom: 10px;
 }
+
+p.modalh{
+    margin: 0px;
+    margin-top: 5px;
+}
