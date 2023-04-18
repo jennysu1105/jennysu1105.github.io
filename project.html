@@ -18,7 +18,7 @@
         $(document).ready(() => {
             let string = window.location.search;
             const params = new URLSearchParams(string);
-            name = params.get('name');
+            name = params.get('name').replaceAll("_", " ");
             document.title = name;
 
             let nametag = document.getElementById('name');
@@ -49,17 +49,16 @@
                     let size = document.getElementById('size');
                     size.innerHTML = project['group'];
                     
-                    let members = document.getElementById('members');
-                    if (project['members'].length > 1){
-                        members.innerHTML += "<ul>";
+                    let members = document.getElementsByTagName("ul").namedItem("members");
+                    if (Object.values(project['members']).length > 0){
                         $.each(project['members'], function(i, val){
                             members.innerHTML += '<li class="menu"><a href="' + val + '">' + i + '</a></li>';
                         });
-                        members.innerHTML += '</ul>';
                     }
                     else{
                         $('#membersh').hide();
                     }
+                    document.getElementById("members").appendChild(members);
 
                     let desc = document.getElementById('description');
                     desc.innerHTML = project['desc'];
@@ -122,7 +121,7 @@
                     <th>Group Size: <span id="size"></span></th>
                 </tr>
                 <tr class="line" id="membersh"><th>Members:</th></tr>
-                <tr><td id="members"></td></tr>
+                <tr id="members"><ul name="members"></ul></tr>
             </table>
             <hr>
             <div class="row" style="margin: 0 auto; padding-bottom: 20px;">
