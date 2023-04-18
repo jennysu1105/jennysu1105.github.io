@@ -25,7 +25,7 @@
 		"body": ["\"project_name\" : {",
             "\t\"date\" : \"\",",
             "\t\"tags\" : [\"\"],",
-			"\t\"members\": [\"\"],",
+			"\t\"members\": {},",
             "\t\"group\" : \"\",",
             "\t\"desc\" : \"\",",
             "\t\"goals\" : {},",

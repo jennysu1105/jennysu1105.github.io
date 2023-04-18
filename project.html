@@ -51,7 +51,11 @@
                     
                     let members = document.getElementById('members');
                     if (project['members'].length > 1){
-                        members.innerHTML = '<ul><li class="menu">' + project['members'].join('</li><li class="menu">') + "</li></ul>";
+                        members.innerHTML += "<ul>";
+                        $.each(project['members'], function(i, val){
+                            members.innerHTML += '<li class="menu"><a href="' + val + '">' + i + '</a></li>';
+                        });
+                        members.innerHTML += '</ul>';
                     }
                     else{
                         $('#membersh').hide();
