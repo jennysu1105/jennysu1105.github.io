@@ -6,3 +6,12 @@ div.mainbody {
 div.inputs {
     padding-top:20px
 }
+
+div.head {
+    border-right: 1px solid darkblue;
+    width: 40%
+}
+
+p {
+    font-size: 12px;
+}

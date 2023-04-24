@@ -16,16 +16,55 @@
     <title>Projects</title>
     <script>
         $(document).ready(() => {
+            var selectVal = "";
+            var value = ""
             $('#search').on("keyup", function(){
-                var value = $(this).val().toLowerCase();
-                $('#projects *').filter(function(){
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1);
+                value = $(this).val().toLowerCase();
+                $('#projects section').filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1 && $(this).text().toLowerCase().indexOf(selectVal) > -1);
                 })
             })
+
+            $('#tags').on("change", function() {
+                selectVal = $(this).val().toLowerCase();
+                $('#projects section').filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1 && $(this).text().toLowerCase().indexOf(selectVal) > -1);
+                })
+            })
+
+            $('#project').on("click", function() {
+                let name = $(this)[0].getElementsByClassName("title")[0];
+                window.location.href = "file:///Users/jennysu/Documents/GitHub/jennysu1105.github.io/project.html?name=" + name.innerHTML;
+            });
+
             let dropdown = ["Web Development", "Databases", "UX/UI", "Content Management System"];
             let select = document.getElementsByTagName("select")[0];
             $.each(dropdown, function(i, val){
                 select.innerHTML += '<option value="' + val + '">' + val + '</option>';
+            });
+
+            let projects = document.getElementById("projects");
+            $.ajax({
+                type: "GET",
+                url: 'https://jennysu1105.github.io/info/projects.json',
+                dataType: 'json',
+                success : function(data){
+                    $.each(data, function(i, val){
+                        let top = '<section><div class="container-fluid mainbody shadow p-3 mb-2 bg-white rounded" id="project">';
+                        let name = '<h5 class="title">' + i + '</h5>';
+                        let period = '<h6 class="date">' + val['date'] + '</h6>';
+                        let tags = '<p class="tags">' + val['tags'].join(", ") + "</p>";
+                        let description = '<p>' + val['desc'] + '</p>';
+                        let languages = '<p class="languages">' + Object.values(val['res']).flat(1).join(", ") + "</p>"
+                        if (Object.keys(val['members']).length > 0){
+                            let members = '<p class="members">Members: ' + Object.keys(val['members']).join(", ") + "</p>";
+                            projects.innerHTML += top + '<div class="row project"><div class="col-5 head">' + name + period + "<hr>" + tags + members + '</div><div class="col desc">' + description +  "<hr>" + languages + '</div></div></section>';
+                        }
+                        else {
+                            projects.innerHTML += top + '<div class="row project"><div class="col-5 head">' + name + period + "<hr>" + tags + '</div><div class="col desc">' + description + "<hr>" + languages + '</div></div></section>';
+                        }
+                    });
+                }
             });
         })
     </script>
@@ -47,9 +86,6 @@
             <br>
         </div>
         <div id="projects">
-            <div class="container-fluid mainbody shadow p-3 mb-5 bg-white rounded" style="margin-bottom: 10%;">
-                <h6 id="title">VRulez</h6>
-            </div>
         </div>
     </div>
     <footer-jenny></footer-jenny>
