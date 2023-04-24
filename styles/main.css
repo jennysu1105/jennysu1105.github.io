@@ -13,3 +13,7 @@ body {
     font-weight: 300;
     background: #bff0ff
 }
+
+div.wholebody {
+    min-height: 69vh;
+}
