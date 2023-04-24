@@ -87,7 +87,7 @@
                     });
 
                     let gallery = document.getElementById('images');
-                    let src = "https://jennysu1105.github.io/res/" + name.replace(" ", "_") + "/";
+                    let src = "https://jennysu1105.github.io/res/" + name.replaceAll(" ", "_") + "/";
                     $.each(project['images'], function(i, val){
                         gallery.innerHTML += '<div class="img shadow p-2 bg-white rounded"><figure><figcaption>' + val + '</figcaption><img class="gallery" id="gallery" src="' + src + val + '"></figure></div>';
                     });
