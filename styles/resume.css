@@ -16,6 +16,11 @@ div.head {
     width: 25%;
 }
 
+div.headl {
+    border-right: 1px solid darkblue;
+}
+
+
 div.edu-head {
     border-right: 1px solid darkblue;
     padding: 10px;

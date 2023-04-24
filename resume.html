@@ -35,10 +35,10 @@
                         let role = '<hr><ul><li>' + val['role'].join('</li><li>') + "</li></ul>";
                         if (val['company'] === "VRulez"){
                             let details = '<a href="/project.html?name=' + val['company'].replace(" ", "_") + '"><button class="btn btn-primary btn-sm">More Details</button></a>';
-                            experience.innerHTML += '<div class="d-flex entry"><div class="head">' + period + position + company + location + details + '</div><div class="desc">' + description + role + '</div>';
+                            experience.innerHTML += '<div class="row entry"><div class="col-3 headl">' + period + position + company + location + details + '</div><div class="col desc">' + description + role + '</div></div>';
                         }
                         else {
-                            experience.innerHTML += '<div class="d-flex entry"><div class="head">' + period + position + company + location + '</div><div class="desc">' + description + role + '</div>';
+                            experience.innerHTML += '<div class="row entry"><div class="col-3 headl">' + period + position + company + location + '</div><div class="col desc">' + description + role + '</div></div>';
                         }
                     });
                 }
@@ -56,7 +56,7 @@
                         let school = '<p class="school">' + val['school'] + '</p>';
                         let location = '<p class="location">' + val['location'] + "</p>";
                         let description = '<p>' + val['description'] + '</p>';
-                        education.innerHTML += '<div class="d-flex entry"><div class="head">' + period + '</div><div class="desc">' + school + name + location + '</div>';
+                        education.innerHTML += '<div class="d-flex entry"><div class="head">' + period + '</div><div class="desc">' + school + name + location + '</div></div>';
                     });
                 }
             });
