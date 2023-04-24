@@ -8,13 +8,13 @@
         "goals" : {"Create a functional shopping website": ["Create functionalities which allows users to order items: signin/signup, add items to their cart, checkout, place order, view orders", "Add additional functionalities such as: reviewing items, creating sale items, etc."], 
         "Create a working database to hold website information": ["Using SQL, store all the information generated via user actions (ex. placing orders, creating payment card, login information, etc) and default admin controlled information (ex. available items, store locations and information).", "Retrieve and send information between the client application and the database servers."], 
         "Make it a Single Page Application": ["A single page application (SPA) is a website that changes pages using a router, which dynamically rewrites the page with new data instead of reloading the entire page. Using React.js, make the web application a SPA."]},
-        "learning" : {},
+        "learning" : {"Modelling database into a rational model scheme": ["Special classes were created to represent each table into its own entity.", "This simplifies the process of inserting new entities into the database: when adding to the database, we simply need to create an object and use one simple function to insert it."], "Experience using React.js": ["React.js is a single page application language. Working with useStates. useCookies, etc. was very confusing at first, but simple after practicing.", "Additionally, practicing rerouting and calling get request gave me a thorough understanding of how to use them.", "Setting up the application as a whole on MacOS, working with team member's setup was also tricky and took many tries to make it work."]},
         "status" : "Complete",
         "res" : {
             "languages" : ["HTML", "CSS", "javascript", "jQuery", "React.js", "MySQL", "php", "bootstrap"],
             "host" : ["XAMPP"]
         },
-        "images" : []
+        "images" : ["login.png", "login_failed.png", "homepage_admin.png", "homepage_added_items.png", "homepage_user.png", "sale_page.png", "admin_dbmaintain.png", "shopping_cart.png", "checkout.png", "review_order.png", "review_order_map.png", "order_history.png"]
     },
 
     "VRulez" : {
