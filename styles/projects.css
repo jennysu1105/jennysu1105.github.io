@@ -8,7 +8,7 @@ div.inputs {
 }
 
 div.head {
-    border-right: 1px solid darkblue;
+    border-right: 1px solid black;
     width: 40%
 }
 
@@ -21,6 +21,9 @@ a {
     color: black
 }
 
+#projectClick:hover {
+    background: #ebf4fa;
+}
 a:hover {
     color: darkblue;
 }
