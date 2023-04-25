@@ -46,7 +46,6 @@ p{
 div.buttons {
     margin-top: 10%;
 }
-
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width:768px) {
     div.left-profile{
         display: block;
@@ -67,6 +66,7 @@ div.buttons {
     }
     .profile {
         background: white;
+        height:75%
     }
     img {
         display: block;
