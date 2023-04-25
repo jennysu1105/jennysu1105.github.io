@@ -47,7 +47,7 @@ div.buttons {
     margin-top: 10%;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width:768px) {
     div.left-profile{
         display: block;
         width:50%;
@@ -60,7 +60,7 @@ div.buttons {
         margin-bottom:20px
     }
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
     p{
         font-size: 12px;
