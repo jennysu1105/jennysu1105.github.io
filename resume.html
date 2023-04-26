@@ -28,17 +28,17 @@
                 success : function(data){
                     $.each(data, function(exp, val){
                         let period = '<h5 class="time">' + val['time'] + '</h5>';
-                        let position = '<p class="position">' + val['position'].join("<br>") + '</p>';
+                        let position = '<p class="position">' + val['position'].join(", ") + '</p>';
                         let company = '<p class="company">' + val['company'] + '</p>';
                         let location = '<p class="location">' + val['location'] + "</p>";
                         let description = '<p>' + val['description'] + '</p>';
-                        let role = '<hr><ul><li>' + val['role'].join('</li><li>') + "</li></ul>";
+                        let role = '<hr><ul><li class="role">' + val['role'].join('</li><li class="role">') + "</li></ul>";
                         if (val['company'] === "VRulez"){
                             let details = '<a href="/project.html?name=' + val['company'].replace(" ", "_") + '"><button class="btn btn-primary btn-sm">More Details</button></a>';
-                            experience.innerHTML += '<div class="row entry"><div class="col-3 headl">' + period + position + company + location + details + '</div><div class="col desc">' + description + role + '</div></div>';
+                            experience.innerHTML += '<div class="row entry"><div class="col-md-3 col-sm-12 headl">' + period + position + company + location + details + '</div><div class="col desc">' + description + role + '</div></div>';
                         }
                         else {
-                            experience.innerHTML += '<div class="row entry"><div class="col-3 headl">' + period + position + company + location + '</div><div class="col desc">' + description + role + '</div></div>';
+                            experience.innerHTML += '<div class="row entry"><div class="col-md-3 col-sm-12 headl">' + period + position + company + location + '</div><div class="col desc">' + description + role + '</div></div>';
                         }
                     });
                 }
@@ -56,7 +56,7 @@
                         let school = '<p class="school">' + val['school'] + '</p>';
                         let location = '<p class="location">' + val['location'] + "</p>";
                         let description = '<p>' + val['description'] + '</p>';
-                        education.innerHTML += '<div class="d-flex entry"><div class="head">' + period + '</div><div class="desc">' + school + name + location + '</div></div>';
+                        education.innerHTML += '<div class="row entry"><div class="col-4 head">' + period + '</div><div class="col desc">' + school + name + location + '</div></div>';
                     });
                 }
             });
@@ -67,9 +67,9 @@
                 url: 'https://jennysu1105.github.io/info/skills.json',
                 dataType: 'json',
                 success : function(data){
-                    let front = '<div class="col skill"><h5>Front-End</h5><ul><li>' + data['professional']['front-end'].join("</li><li>") + "</li></ul></div>";
-                    let back = '<div class="col skill"><h5>Back-End</h5><ul><li>' + data['professional']['back-end'].join("</li><li>") + "</li></ul></div>";
-                    let uxui = '<div class="col skill"><h5>UX/UI</h5><ul><li>' + data['professional']['UXUI'].join("</li><li>") + "</li></ul></div>";
+                    let front = '<div class="col skill"><h5>Front-End</h5><ul><li class="skill">' + data['professional']['front-end'].join('</li><li class="skill">') + "</li></ul></div>";
+                    let back = '<div class="col skill"><h5>Back-End</h5><ul><li class="skill">' + data['professional']['back-end'].join('</li><li class="skill">') + "</li></ul></div>";
+                    let uxui = '<div class="col skill"><h5>UX/UI</h5><ul><li class="skill">' + data['professional']['UXUI'].join('</li><li class="skill">') + "</li></ul></div>";
                     skills.innerHTML += '<h4>Professional</h4><hr>' + front + back + uxui;
                 }
             });

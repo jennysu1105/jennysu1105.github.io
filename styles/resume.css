@@ -11,18 +11,13 @@ h2 {
 }
 
 div.head {
-    border-right: 1px solid darkblue;
+    border-right: 1px solid black;
     padding: 10px;
     width: 25%;
 }
 
-div.headl {
-    border-right: 1px solid darkblue;
-}
-
-
 div.edu-head {
-    border-right: 1px solid darkblue;
+    border-right: 1px solid black;
     padding: 10px;
     width: 20%;
 }
@@ -54,4 +49,23 @@ div.desc {
 
 h4 {
     text-align: center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width:768px) {
+    h5{
+        font-size: 16px;
+    }
+    div.headl {
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    p, li.role, li.skill {
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 769px) {
+    div.headl {
+        border-right: 1px solid black;
+    }
 }

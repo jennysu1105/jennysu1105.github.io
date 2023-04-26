@@ -15,5 +15,17 @@ body {
 }
 
 div.wholebody {
-    min-height: 75vh;
+    min-height: 90vh;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width:768px) {
+    h4.footer {
+        font-size: 16px;
+    }
+    h6.footer {
+        font-size: 14px;
+    }
+    p.footer {
+        font-size: 12px;
+    }
 }
