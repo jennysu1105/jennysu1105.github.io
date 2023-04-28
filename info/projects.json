@@ -11,8 +11,10 @@
         "learning" : {"Modelling database into a rational model scheme": ["Special classes were created to represent each table into its own entity.", "This simplifies the process of inserting new entities into the database: when adding to the database, we simply need to create an object and use one simple function to insert it."], "Experience using React.js": ["React.js is a single page application language. Working with useStates. useCookies, etc. was very confusing at first, but simple after practicing.", "Additionally, practicing rerouting and calling get request gave me a thorough understanding of how to use them.", "Setting up the application as a whole on MacOS, working with team member's setup was also tricky and took many tries to make it work."], "Working with XAMPP: Apache and MySQL": ["Setting up XAMPP and the MySQL database was new and it was straight forward. I learned how to establish the connection to local servers and use that to interact with the database using php.", "This includes: inserting, modifying and deleting entries and designing the overall architecture to fit the needs of the application in a modular and intuitive way."]},
         "status" : "Complete",
         "res" : {
-            "languages" : ["HTML", "CSS", "javascript", "jQuery", "React.js", "MySQL", "php", "bootstrap"],
-            "host" : ["XAMPP"]
+            "languages" : ["HTML", "CSS", "javascript", "React.js", "MySQL", "php"],
+            "frameworks/Libraries" : ["bootstrap", "jQuery"],
+            "host" : ["XAMPP"],
+            "applications": ["Visual Studio Code"]
         },
         "images" : ["login.png", "login_failed.png", "homepage_admin.png", "homepage_added_items.png", "homepage_user.png", "sale_page.png", "admin_dbmaintain.png", "shopping_cart.png", "checkout.png", "review_order.png", "review_order_map.png", "order_history.png", "rational_model_scheme.png", "database_scheme.png"]
     },
@@ -28,16 +30,31 @@
         "status" : "Complete",
         "res" : {
             "languages" : ["VB.NET (Visual Basics)"],
-            "coding Environment": ["Visual Studio"]
+            "applications": ["Visual Studio 2022 IDE"]
         },
-            "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "rider_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "chat_rider.PNG", "chat_owner.PNG"]
+            "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "rider_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "request_stop_confirmation.PNG", "chat_rider.PNG", "chat_owner.PNG"]
+    },
+
+    "SPLIT" : {
+        "date" : "January 2021 - April 2021",
+        "tags" : ["Game Development", "UX/UI"],
+        "members": {"Yiheng Dai" : "", "Ka Yin Kan" : "", "Yasmeen Saboorizadeh" : "https://www.linkedin.com/in/yasmeensaboorizadeh/"},
+        "group" : "4",
+        "desc" : "A course project for TMU's CRI510 - Art and Business of Gaming. For this project, we were tasked to design a game and identify the way the process at which we will produce, distribute and market our game idea.",
+        "goals" : {"Create a game idea using the 3Cs": ["The Three Cs in game development is: Characters, Camera and Controls. Think of a game concept and define how the 3Cs would be applied to our idea."], "Create a one-page proposal": ["This proposal contains important game details and target demographics"], "Create a monotization strategy" : ["Describe your monotization strategy: promotions, revenue outlets (base game price, DLCs, in-game purchases, merch, partnerships), marketing, cultural impact, demographics, etc. As well as roles of sectors (business/finance, programming, testing, etc) and their roles and goals for the project, and create a budget estimate for production, marketing and distribution of the game."]},
+        "learning" : {"Experience creating a game concept and applying 3Cs": ["Our game idea was a hero/villain game where players can choose their path (hero/villain) resulting in different storylines and endings.", "For Character, we identified the characteristics and background story of the protegonist, provided a description for major side characters, organization structures and NPC (each having their own backgrounds and properties.", "For camera, we decided to have a 3rd person point-of-view", "For Controls: we decided to use standard WASD-Space controls with mouse combat controls"], "Planning the UX/UI of a game": ["Mechanics from gameplay to powerups to currencies are important pieces of the user experience and interface of a game. With an open-world RPG, we identified and described all aspects of the gameplay and mechanics.", "To represent the UI of the game, we described the player experience with a screenflow diagram."], "Brief look at the business side of game development": ["Monotization strategies and budgetting are very important for both production and distribution of a game. We took a comprehensive look of how each sector of a game company works together from production to release."]},
+        "status" : "Complete",
+        "res" : {
+            "applications" : ["Procreate", "PowerPoint"]
+        },
+        "images" : ["logo_credits_yasmeen.PNG", "battle_interface.png", "city_square_sketch.png", "exploration_interface.png", "village_sketch.png", "one_page_proposal.png", "title_screenflow.png", "in_game_screenflow.png"]
     },
 
     "VRulez" : {
         "date" : "October 2019 - February 2020",
         "tags" : ["Web Development", "Content Management System", "UX/UI"],
         "group" : "2",
-        "members" : {},
+        "members" : {"Shane" : ""},
         "desc" : "VRulez is a Virtual Reality Cafe where customers can use machines to play VR games for a set amount of time. The purpose of this website is to provide information about the games available to play, create bookings, and view any information about the company and experience.",
         "goals" : {"Design pages of the website": ["Organize the information in a visual appealing and inuitive way. I was tasked to design the game list page, home page, news page and locations page"], 
         "Create a game list page" : ["Organize all the games into subcategories and display them."]},
@@ -50,5 +67,38 @@
             "cms" : ["Wix"]
         },
         "images" : ["home.png", "gamelist.png", "gamelist_expanded.png", "locations.png", "press.png"]
+    },
+
+    "Tic-Tac-Toe App" : {
+        "date" : "January 2018 - June 2018",
+        "tags" : ["Game Development, App Development"],
+        "members": {},
+        "group" : "1",
+        "desc" : "An android app made for my final project for ICS4U1 - Grade 12: Introduction to Computer Science at Dr. Norman Bethune CI. I created a Tic-Tac-Toe app using Android Studios which implemented all of the Tic-Tac-Toe rules.",
+        "goals" : {"Create app using Android Studios": ["Using gradle as a vitual machine for testing, develop a working app for Android devices using Android Studios."], "Implement the Tic-Tac-Toe rules in the app" : ["Simulate a real Tic-Tac-Toe game using rule checking and user input detection: determine if a move is valid and if a player has won."], "Create multiple navigable menus": ["Create menus where users can choose to turn computer opponent on and off, customize name and choose who goes first."]},
+        "learning" : {"Implementing options menu using activities": ["To separate the options menu and the main game, the app swaps the set activity object while saving the states of both when the users swap."], "Working with OOP" : ["Java is a object-oriented programming language. To create the app, each element has event listeners to describe what will happen after the element recieves user input."]},
+        "status" : "Complete",
+        "res" : {
+            "languages" : ["Java"],
+            "applications" : ["Android Studio"]
+        },
+            "images" : []
+    },
+
+    "Elmia" : {
+        "date" : "January 2017 - June 2017",
+        "tags" : ["Game Development"],
+        "members": {},
+        "group" : "1",
+        "desc" : "A Python game made for my final project for ICS3U1 - Grade 11: Introduction to Computer Science at Dr. Norman Bethune CI. I created a side-scrolling platformer using pygame. Players traverse through map levels using a teleport mechanic to avoid falling and hostile monsters. This is a game inspired by the real Elmia game with the use of sprites from Maplestory.",
+        "goals" : {"Experiement with object interactions": ["Using collision detection, create events for when the player makes contact with other sprites.", "Example: Player and hostile mobs --> lose a life, Player and platform --> player lands and walks on platform."], "Create multi-menus": ["Create multiple screens: home screen, game over screen, completion screen, game screen.", "When sreen change is detected, swap these screens by refreshing current game sprites."], "Experience with game design": ["Design game mechanics (lives, energy, monsters, etc) and maps. Additionally, consider menu flow and user interface."], "Working with file data": ["Build maps using a mapdata file: containing numbers representing objects and their coordinates.", "Store high scores in a file which is retrievable and reference them in a high score menu."]},
+        "learning" : {"Working with collision detection": ["Elmia checks collision detection by checking if sprites are overlapping with each other. Collision results in different results: lost life when colliding with walls or hostile monsters, energy reset/extra life with energy orbs, level completion with ending wall.", "Collisions are detected using the coordinates of the object locations."], "Metadata in files": ["Map data is stored in a text file where platform coordinates, wall coordinates, hostile mobs, level end locations, energy orbs, etc are kept.", "Highscores for each level are stored and retrieved when entering the highscores menu."], "Object manipulation": ["Elmia uses some OOP to contain all objects with events: energy bar, buttons, lives, player, wolf, etc. Each object has properties indicating important information: position, sprites, actions (move, stop, fall), etc."]},
+        "status" : "Complete",
+        "res" : {
+            "languages" : ["Python 2"],
+            "frameworks/Libraries" : ["pygame"],
+            "applications": ["Wing IDE", "Paint.NET", "Bannedstory"]
+        },
+            "images" : ["main_menu.PNG", "tutorial.PNG", "main_game.PNG", "teleport_mechanic.PNG", "energy_orb.PNG", "hostile_monster.PNG", "game_over_complete.PNG", "high_scores.PNG"]
     }
 }

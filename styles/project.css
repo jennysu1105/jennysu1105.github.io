@@ -52,11 +52,13 @@ figcaption {
     font-size: 12px;
     font-weight: 500;
     margin-bottom: 10px;
+    overflow: hidden
 }
 
 p.modalh{
     margin: 0px;
     margin-top: 5px;
+    overflow: hidden;
 }
 
 a {

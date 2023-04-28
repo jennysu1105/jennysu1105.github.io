@@ -52,7 +52,12 @@
                     let members = document.getElementsByTagName("ul").namedItem("members");
                     if (Object.values(project['members']).length > 0){
                         $.each(project['members'], function(i, val){
-                            members.innerHTML += '<li class="menu"><a href="' + val + '">' + i + '</a></li>';
+                            if (val === ""){
+                                members.innerHTML += '<li class="menu">' + i + '</li>';
+                            }
+                            else {
+                                members.innerHTML += '<li class="menu"><a href="' + val + '">' + i + '</a></li>';
+                            }
                         });
                     }
                     else{

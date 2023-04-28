@@ -33,6 +33,8 @@
             "\t\"status\" : \"Complete/In Progress\",",
             "\t\"res\" : {",
                 "\t\t\"languages\" : [\"\"],",
+				"\t\t\"applications\" : [\"\"],",
+				"\t\t\"frameworks/Libraries\" : [\"\"],",
                 "\t\t\"cms\" : [\"\"],",
                 "\t\t\"host\" : [\"\"]",
 				"\t},",
