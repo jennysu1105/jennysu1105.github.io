@@ -30,7 +30,7 @@
             "languages" : ["VB.NET (Visual Basics)"],
             "coding Environment": ["Visual Studio"]
         },
-            "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "ride_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "chat_ride.PNG", "chat_owner.PNG"]
+            "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "rider_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "chat_rider.PNG", "chat_owner.PNG"]
     },
 
     "VRulez" : {
