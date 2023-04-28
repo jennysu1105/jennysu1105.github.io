@@ -17,6 +17,22 @@
         "images" : ["login.png", "login_failed.png", "homepage_admin.png", "homepage_added_items.png", "homepage_user.png", "sale_page.png", "admin_dbmaintain.png", "shopping_cart.png", "checkout.png", "review_order.png", "review_order_map.png", "order_history.png", "rational_model_scheme.png", "database_scheme.png"]
     },
 
+    "ECar App Project" : {
+        "date" : "September 2021 - December 2021",
+        "tags" : ["UX/UI", "App Development"],
+        "members": {"Giancarlo Rosa" : "https://github.com/giancarloclubly", "Finn Huynh": "https://github.com/trachuynh2014"},
+        "group" : "3",
+        "desc" : "A project done in TMU's CPS613 - Human-Computer Interactions class. For this project, we created an taxi-like app for owners of self-driving cars. For this application, there must be an car owner and ride sharer interface. We were tasked to create an intuitive and easy-to-use app that users of all backgrounds/demographics should be able use without difficulty. Additionally, we needed to conduct usability testing on the app with test subjects.",
+        "goals" : {"Create two interfaces": ["The car wner interface should allow users to: view their car status (ex. current location, current charge, odometer), recieve and accept/decline ride requests, view car schedule and create unavailable time slots (where the car cannot be booked), view active ride (if there is one), chat with ride sharers.", "The ride sharer interface should allow users to: view their profile (ex. payment information, recent rides), search and request rides, view active ride (if there is one), chat with ride sharers."], "Have the two interfaces interact with each other" : ["When the ride sharer requests a ride, it should trigger a ride request confirmation where the car owner can accept/deny the request.", "When the ride sharer requests an extra stop for their current ride, the car owner can accept/deny the request.", "When the ride sharer or owner sends a message in the chat, the chats should be synchronized with each other."], "Conduct a usability test" : ["Prepare a test plan and scenarios that will be followed during an usability test with test subjects.", "Conduct the usability test and take notes on any issues/unclear sections of the interface."]},
+        "learning" : {"Experience with VB.NET": ["VB.NET or Vidual Basics is an object-oriented programming language using the .NET Framework. It is used for making GUI programs (using Windows Forms) and was used for this project to design a high-fidelity prototype of our app idea.", "Using event handers and attributes, we were able to create two interfaces (one car owner, the other ride sharer) that are synchronized with one another by passing event changes using object-oriented programming."], "Analyzing user requirements": ["Given our app idea, it is necessary for us to identify the various users and stakeholders of the application (ex. car owner, ride sharer) as well as possible backgrounds (ex. gender, IT expirence, skills) and demographics (ex. gender, age, accessibility requirements). Additionally, environmental, organizational and technical requirements.", "With everything taken into account, user goals and tasks were created."], "Conducting usability tests": ["Creating scenarios and test plan is necessary for a successful usability test. We created a pre-usability test plan and practiced asking open-ended questions to the test subjects after the test concludes."]},
+        "status" : "Complete",
+        "res" : {
+            "languages" : ["VB.NET (Visual Basics)"],
+            "coding Environment": ["Visual Studio"]
+        },
+            "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "ride_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "chat_ride.PNG", "chat_owner.PNG"]
+    },
+
     "VRulez" : {
         "date" : "October 2019 - February 2020",
         "tags" : ["Web Development", "Content Management System", "UX/UI"],

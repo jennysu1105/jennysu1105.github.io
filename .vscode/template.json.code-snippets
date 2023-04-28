@@ -35,9 +35,9 @@
                 "\t\t\"languages\" : [\"\"],",
                 "\t\t\"cms\" : [\"\"],",
                 "\t\t\"host\" : [\"\"]",
-				"\t}",
-				"},",
-			"\t\"images\" : []"
+				"\t},",
+				"\t\t\"images\" : []",
+				"},"
             ],
 		"description": "projects template"
     },
