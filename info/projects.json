@@ -20,7 +20,7 @@
     },
 
     "ECar App Project" : {
-        "date" : "September 2021 - December 2021",
+        "date" : "September 2022 - December 2022",
         "tags" : ["UX/UI", "App Development"],
         "members": {"Giancarlo Rosa" : "https://github.com/giancarloclubly", "Finn Huynh": "https://github.com/trachuynh2014"},
         "group" : "3",
@@ -32,7 +32,24 @@
             "languages" : ["VB.NET (Visual Basics)"],
             "applications": ["Visual Studio 2022 IDE"]
         },
-            "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "rider_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "request_stop_confirmation.PNG", "chat_rider.PNG", "chat_owner.PNG"]
+        "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "rider_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "request_stop_confirmation.PNG", "chat_rider.PNG", "chat_owner.PNG"]
+    },
+
+    "Convention Centre DBMS" : {
+        "date" : "September 2021 - December 2021",
+        "tags" : ["Databases"],
+        "members": {"Stephanie Huynh" : "https://www.linkedin.com/in/stephanie-huynh-a1a5541ab/?originalSubdomain=ca", "Laith Kamal" : "", "Adam Whittington" : ""},
+        "group" : "4",
+        "desc" : "A project done in TMU's CPS510 - Database Sytems I class. For this project, we were tasked to design a Database Management System (DBMS) for a topic. Our chosen topic was a Convention Centre database which kept track of all attendees, tickets, events, addresses, directories, guest and employees of the database",
+        "goals" : {},
+        "learning" : {},
+        "status" : "Complete",
+        "res" : {
+            "languages" : ["Java", "Shell Script"],
+            "applications" : ["SQL Developer", "Visual Studio Code"],
+            "host" : ["Oracle"]
+        },
+        "images" : []
     },
 
     "SPLIT" : {
@@ -82,7 +99,7 @@
             "languages" : ["Java"],
             "applications" : ["Android Studio"]
         },
-            "images" : []
+        "images" : []
     },
 
     "Elmia" : {
@@ -99,6 +116,6 @@
             "frameworks/Libraries" : ["pygame"],
             "applications": ["Wing IDE", "Paint.NET", "Bannedstory"]
         },
-            "images" : ["main_menu.PNG", "tutorial.PNG", "main_game.PNG", "teleport_mechanic.PNG", "energy_orb.PNG", "hostile_monster.PNG", "game_over_complete.PNG", "high_scores.PNG"]
+        "images" : ["main_menu.PNG", "tutorial.PNG", "main_game.PNG", "teleport_mechanic.PNG", "energy_orb.PNG", "hostile_monster.PNG", "game_over_complete.PNG", "high_scores.PNG"]
     }
 }

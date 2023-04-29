@@ -24,6 +24,31 @@
             let nametag = document.getElementById('name');
             nametag.innerHTML = name;
 
+            let info = document.getElementById('info');
+            let report = document.getElementById('report');
+            report.innerHTML = '<object type="application/pdf" class="report" width="100%" height="100%" data="https://jennysu1105.github.io/reports/' + name.replaceAll(" ", "_") + '.pdf"></object>';
+            
+            $('button.info').css("background-color", "white");
+            $('button.info').css("color", "black");
+            $("#report").hide();
+
+            $("button.info").click(function() {
+                $("#info").show();
+                $('button.info').css("background-color", "white");
+                $('button.info').css("color", "black");
+                $("#report").hide();
+                $('button.report').css("background-color", "black");
+                $('button.report').css("color", "white");
+            });
+
+            $("button.report").click(function() {
+                $("#report").show();
+                $('button.report').css("background-color", "white");
+                $('button.report').css("color", "black");
+                $("#info").hide();
+                $('button.info').css("background-color", "black");
+                $('button.info').css("color", "white");
+            });
             $.ajax({
                 type: 'GET',
                 url: 'https://jennysu1105.github.io/info/projects.json',
@@ -130,34 +155,38 @@
             </table>
             <hr>
             <div class="row" style="margin: 0 auto; padding-bottom: 20px;">
-                <div class="col"><button class="btn btn-dark btn-sm">Info</button></div>
-                <div class="col"><button class="btn btn-dark btn-sm">Report</button></div>
+                <div class="col"><button class="btn btn-dark btn-sm info">Info</button></div>
+                <div class="col"><button class="btn btn-dark btn-sm report">Report</button></div>
             </div>
         </div>
-        <div class="row body shadow p-3 mb-1 bg-white rounded">
-            <h4>Project Drescription</h4>
-            <hr>
-            <p id="description"></p>
+        <div id="info">
+            <div class="row body shadow p-3 mb-1 bg-white rounded">
+                <h4>Project Drescription</h4>
+                <hr>
+                <p id="description"></p>
+            </div>
+            <div class="row body shadow p-3 mb-1 bg-white rounded">
+                <h4>Project Objective</h4>
+                <hr>
+                <p id="goals"></p>
+            </div>
+            <div class="row body shadow p-3 mb-1 bg-white rounded">
+                <h4>What I Learned</h4>
+                <hr>
+                <p id="learn"></p>
+            </div>
+            <div class="row body shadow p-3 mb-1 bg-white rounded">
+                <h4>Resources</h4>
+                <hr>
+                <div id="res"></div>
+            </div>
+            <div class="row body shadow p-3 mb-1 bg-white rounded">
+                <h4>Gallery</h4>
+                <hr>
+                <div id="images"></div>
+            </div>
         </div>
-        <div class="row body shadow p-3 mb-1 bg-white rounded">
-            <h4>Project Objective</h4>
-            <hr>
-            <p id="goals"></p>
-        </div>
-        <div class="row body shadow p-3 mb-1 bg-white rounded">
-            <h4>What I Learned</h4>
-            <hr>
-            <p id="learn"></p>
-        </div>
-        <div class="row body shadow p-3 mb-1 bg-white rounded">
-            <h4>Resources</h4>
-            <hr>
-            <div id="res"></div>
-        </div>
-        <div class="row body shadow p-3 mb-1 bg-white rounded">
-            <h4>Gallery</h4>
-            <hr>
-            <div id="images"></div>
+        <div class="body" id="report">
         </div>
     </div>
     
