@@ -26,7 +26,7 @@
 
             let info = document.getElementById('info');
             let report = document.getElementById('report');
-            report.innerHTML = '<object type="application/pdf" class="report" width="100%" height="100%" data="https://jennysu1105.github.io/reports/' + name.replaceAll(" ", "_") + '.pdf"><a href="https://jennysu1105.github.io/reports/' + name.replaceAll(" ", "_") + '.pdf">Go to PDF location</a></object>';
+            report.innerHTML = '<object type="application/pdf" class="report" width="100%" height="100%" data="https://jennysu1105.github.io/reports/' + name.replaceAll(" ", "_") + '.pdf"></object><a class="pdf" href="https://jennysu1105.github.io/reports/' + name.replaceAll(" ", "_") + '.pdf">Go to PDF location</a>';
             
             $('button.info').css("background-color", "white");
             $('button.info').css("color", "black");

@@ -66,6 +66,13 @@ a {
     color: black;
 }
 
+a.pdf {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width:768px) {
     div.menu {
         margin-left: auto;
