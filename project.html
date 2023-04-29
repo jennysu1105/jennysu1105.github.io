@@ -26,7 +26,7 @@
 
             let info = document.getElementById('info');
             let report = document.getElementById('report');
-            report.innerHTML = '<object type="application/pdf" class="report" width="100%" height="100%" data="https://jennysu1105.github.io/reports/' + name.replaceAll(" ", "_") + '.pdf"></object>';
+            report.innerHTML = '<iframe class="report" width="100%" height="100%" src="https://jennysu1105.github.io/reports/' + name.replaceAll(" ", "_") + '.pdf"></iframe>';
             
             $('button.info').css("background-color", "white");
             $('button.info').css("color", "black");
