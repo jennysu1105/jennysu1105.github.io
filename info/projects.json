@@ -41,13 +41,13 @@
         "members": {"Stephanie Huynh" : "https://www.linkedin.com/in/stephanie-huynh-a1a5541ab/?originalSubdomain=ca", "Laith Kamal" : "", "Adam Whittington" : ""},
         "group" : "4",
         "desc" : "A project done in TMU's CPS510 - Database Sytems I class. For this project, we were tasked to design a Database Management System (DBMS) for a topic. Our chosen topic was a Convention Centre database which kept track of all attendees, tickets, events, addresses, directories, guest and employees of the database",
-        "goals" : {},
-        "learning" : {},
+        "goals" : {"Design the database" : ["Split all actors and components that goes a convention centre may have and create a table for them.", "Identify attributes of each table.", "Identify any and all relationships that each table may have with each other and connect them with a table.", "Create an Entity-Relationship (ER) diagram that represents the database."], "Create an interface for users" : ["Using queries, create an interface where users can create new entities and relationships for the database."]},
+        "learning" : {"Experience planning database structure": ["Using the ER diagram, we were able to map out our ideas and visualize how the proposed database will be implemented into SQL.", "To ensure the database is as simple as it can be, we analyzed the database to ensure they were in the third normal form (to reduce duplication data and simplifies database). For that, we checked the functional dependancies of each table."], "Experience using SQL" : ["To create the database, we learned how to use SQL queries to: create, modify, delete and view tables. That includes going in depth into how to use SELECT queries.", "We immersed ourselves into the ER data model by using foreign keys."]},
         "status" : "Complete",
         "res" : {
             "languages" : ["Java", "Shell Script"],
             "applications" : ["SQL Developer", "Visual Studio Code"],
-            "host" : ["Oracle"]
+            "host" : ["Oracle Database"]
         },
         "images" : []
     },
