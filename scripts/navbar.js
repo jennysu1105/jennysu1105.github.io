@@ -17,10 +17,10 @@ class Navigation extends HTMLElement {
                         <a class="nav-link" href="/">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/resume.html">Resume</a>
+                        <a class="nav-link" href="/resume">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects.html">Projects</a>
+                        <a class="nav-link" href="/projects">Projects</a>
                     </li>
                     </ul>
                 </div>

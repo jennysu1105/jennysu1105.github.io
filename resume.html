@@ -34,7 +34,7 @@
                         let description = '<p>' + val['description'] + '</p>';
                         let role = '<hr><ul><li class="role">' + val['role'].join('</li><li class="role">') + "</li></ul>";
                         if (val['company'] === "VRulez"){
-                            let details = '<a href="/project.html?name=' + val['company'].replace(" ", "_") + '"><button class="btn btn-primary btn-sm">More Details</button></a>';
+                            let details = '<a href="/project?name=' + val['company'].replace(" ", "_") + '"><button class="btn btn-primary btn-sm">More Details</button></a>';
                             experience.innerHTML += '<div class="row entry"><div class="col-md-3 col-sm-12 headl">' + period + position + company + location + details + '</div><div class="col desc">' + description + role + '</div></div>';
                         }
                         else {

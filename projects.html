@@ -45,7 +45,7 @@
                 dataType: 'json',
                 success : function(data){
                     $.each(data, function(i, val){
-                        let top = '<a href="/project.html?name=' + i.replaceAll(" ", "_") + '"><section><div class="container-fluid mainbody shadow p-3 mb-2 rounded" id="projectClick">';
+                        let top = '<a href="/project?name=' + i.replaceAll(" ", "_") + '"><section><div class="container-fluid mainbody shadow p-3 mb-2 rounded" id="projectClick">';
                         let name = '<h5 class="title">' + i + '</h5>';
                         let period = '<h6 class="date">' + val['date'] + '</h6>';
                         let tags = '<p class="tags">' + val['tags'].join(", ") + "</p>";
