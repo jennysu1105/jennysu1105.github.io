@@ -8,7 +8,6 @@ class Footer extends HTMLElement {
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="col py-3">
-                        <h6 class="footer">Email</h6>
                         <p class="footer" style="margin-bottom: 0px">jenny.su.1105@gmail.com</p>
                     </div>
                     <div class="col py-3"><h4 class="footer">Jenny Su</h4></div>

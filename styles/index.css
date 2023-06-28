@@ -2,12 +2,10 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     background: linear-gradient(
-        to right,
-        #bff0ff 0%,
-        #bff0ff 50%,
-        #ffffff 50%,
-        #ffffff 100%
-    )
+        to bottom,
+        #273a63 0%,
+        #5a898c 100%
+    );
 }
 
 .bio {
@@ -29,8 +27,8 @@ p{
 .profile {
     background: linear-gradient(
         to right,
-        #e8f7fc 0%,
-        #e8f7fc 50%,
+        #9bcdd1 0%,
+        #9bcdd1 50%,
         #ffffff 50%,
         #ffffff 100%
     );

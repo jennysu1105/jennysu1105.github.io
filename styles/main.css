@@ -11,7 +11,11 @@ nav {
 body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    background: #bff0ff
+    background: linear-gradient(
+        to bottom,
+        #273a63 0%,
+        #5a898c 100%
+    );
 }
 
 div.wholebody {
