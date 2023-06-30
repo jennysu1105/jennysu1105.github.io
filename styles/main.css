@@ -14,7 +14,7 @@ body {
     background: linear-gradient(
         to bottom,
         #273a63 0%,
-        #5a898c 100%
+        #5a898c 80%
     );
 }
 
@@ -32,4 +32,43 @@ div.wholebody {
     p.footer {
         font-size: 12px;
     }
+}
+
+.star {
+    position: absolute;
+    background: #fff;
+    animation: twinkle 4s infinite;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+.stars2 {
+    animation-delay: -1.32s;
+}
+
+.stars3 {
+    animation-delay: -2.64s;
+}
+@keyframes twinkle {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+.stars:nth-child(3n) {
+    opacity: 0.8;
+}
+.stars:nth-child(7n) {
+    opacity: 0.6;
+}
+.stars:nth-child(13n) {
+    opacity: 0.4;
+}
+.stars:nth-child(19n) {
+    opacity: 0.2;
 }

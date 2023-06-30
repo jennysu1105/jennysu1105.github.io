@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/footer.js"></script>
+    <script src="scripts/background.js"></script>
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/projects.css" rel="stylesheet">
     <title>Projects</title>
@@ -67,7 +68,10 @@
 <body>
     <nav-bar></nav-bar>
     <div class="wholebody">
-        <div class="container-fluid mainbody shadow p-3 mb-2 bg-white rounded" style="margin-top: 5%;">
+        <div class="container-fluid mainbody shadow p-3 mb-2 bg-white rounded" id="stars" style="margin-top: 5%;">
+            <script>createStars(1000, "stars1")</script>
+            <script>createStars(1000, "stars2")</script>
+            <script>createStars(1000, "stars3")</script>
             <div class="row inputs">
                 <div class="col-2"> 
                     <select class="form-select" id="tags">

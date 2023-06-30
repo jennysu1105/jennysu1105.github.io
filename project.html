@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/footer.js"></script>
+    <script src="scripts/background.js"></script>
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/project.css" rel="stylesheet">
     <title>Document</title>
@@ -138,7 +139,10 @@
 </head>
 <body>
     <nav-bar></nav-bar>
-    <div class="container-fluid wholebody" style="margin-bottom: 10%; margin-top: 5%">
+    <div class="container-fluid wholebody" id="stars" style="margin-bottom: 10%; margin-top: 5%">
+        <script>createStars(1000, "stars1")</script>
+        <script>createStars(1000, "stars2")</script>
+        <script>createStars(1000, "stars3")</script>
         <div class="row menu shadow p-3 mb-1 bg-white rounded">
             <h5 id="name"></h5>
             <hr>

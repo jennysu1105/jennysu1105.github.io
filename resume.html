@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/footer.js"></script>
+    <script src="scripts/background.js"></script>
     <link href="styles/resume.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <title>Resume</title>
@@ -78,7 +79,10 @@
 </head>
 <body>
     <nav-bar></nav-bar>
-    <div class="container-fluid wholebody" style="margin-bottom: 10%">
+    <div class="container-fluid wholebody" id="stars" style="margin-bottom: 10%">
+        <script>createStars(1000, "stars1")</script>
+        <script>createStars(1000, "stars2")</script>
+        <script>createStars(1000, "stars3")</script>
         <div class="row mainbody shadow p-3 my-5 bg-white rounded">
             <h2>Experience</h2>
             <hr>

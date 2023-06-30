@@ -11,13 +11,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="scripts/navbar.js"></script>
     <script src="scripts/footer.js"></script>
+    <script src="scripts/background.js"></script>
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/index.css" rel="stylesheet">
     <title>Jenny Su</title>
 </head>
 <body>
     <nav-bar></nav-bar>
-    <div class="container-fluid mainbody" style="margin-bottom: 10%">
+    <div class="container-fluid mainbody" id="stars" style="margin-bottom: 10%">
+        <script>createStars(1000, "stars1")</script>
+        <script>createStars(1000, "stars2")</script>
+        <script>createStars(1000, "stars3")</script>
         <div class="row profile align-items-center justify-content-between shadow p-3 mb-5 bg-white rounded">
             <div class="col-md-6 col-sm-12 left-profile p-2 justify-content-start">
                     <img class="profile-pic shadow rounded-circle border" src="res/profile_pic.jpg" alt="Profile Picture">
