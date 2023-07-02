@@ -1,4 +1,23 @@
 {
+    "MyWebtoonList Web Application" : {
+        "date" : "January 2023 - Current",
+        "tags" : ["Web Development", "Databases", "UX/UI"],
+        "members": {},
+        "group" : "1",
+        "desc" : "A personal project where users can keep track of webtoons they are reading, plan to read, have completed and have dropped. The web app should keep track of details about the webtoons including: title, alternative titles, author, original language, characters, description, etc. Each webtoon should have their own page and be listed in the users' personal list with the webtoon title and author.",
+        "goals" : {"Create a MERN Stack application": ["The MERN Stack consist of the use of MongoDB. ExpressJS, ReactJS and NodeJS.", "These technologies will be used together to develop both the front-end and back-end of the website."], 
+        "Design a model schema for the database": ["Using MongoDB, store all information about each webtoon and user status on each one.", "Retrieve the information from the database server and display the information on the client application."], 
+        "Design the website" : ["Ensure navigation is simple and straightforward."]},
+        "learning" : {},
+        "status" : "In Progress",
+        "res" : {
+            "languages" : ["HTML", "CSS", "javascript"],
+            "applications" : ["Visual Studio Code"],
+            "frameworks/Libraries" : ["bootstrap", "jQuery", "axios", "ReactJS", "ExpressJS", "NodeJS"],
+            "host" : ["MongoDB"]
+        },
+        "images" : []
+    },
     "Web Application Project" : {
         "date" : "January 2023 - April 2023",
         "tags" : ["Web Development", "Databases", "UX/UI"],
@@ -11,9 +30,9 @@
         "learning" : {"Modelling database into a rational model scheme": ["Special classes were created to represent each table into its own entity.", "This simplifies the process of inserting new entities into the database: when adding to the database, we simply need to create an object and use one simple function to insert it."], "Experience using React.js": ["React.js is a single page application language. Working with useStates. useCookies, etc. was very confusing at first, but simple after practicing.", "Additionally, practicing rerouting and calling get request gave me a thorough understanding of how to use them.", "Setting up the application as a whole on MacOS, working with team member's setup was also tricky and took many tries to make it work."], "Working with XAMPP: Apache and MySQL": ["Setting up XAMPP and the MySQL database was new and it was straight forward. I learned how to establish the connection to local servers and use that to interact with the database using php.", "This includes: inserting, modifying and deleting entries and designing the overall architecture to fit the needs of the application in a modular and intuitive way."]},
         "status" : "Complete",
         "res" : {
-            "languages" : ["HTML", "CSS", "javascript", "React.js", "MySQL", "php"],
-            "frameworks/Libraries" : ["bootstrap", "jQuery"],
-            "host" : ["XAMPP"],
+            "languages" : ["HTML", "CSS", "javascript", "php"],
+            "frameworks/Libraries" : ["bootstrap", "jQuery", "axios", "ReactJS"],
+            "host" : ["XAMPP", "MySQL"],
             "applications": ["Visual Studio Code"]
         },
         "images" : ["login.png", "login_failed.png", "homepage_admin.png", "homepage_added_items.png", "homepage_user.png", "sale_page.png", "admin_dbmaintain.png", "shopping_cart.png", "checkout.png", "review_order.png", "review_order_map.png", "order_history.png", "rational_model_scheme.png", "database_scheme.png"]
