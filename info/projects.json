@@ -12,9 +12,9 @@
         "status" : "In Progress",
         "res" : {
             "languages" : ["HTML", "CSS", "javascript"],
-            "applications" : ["Visual Studio Code"],
+            "applications" : ["Visual Studio Code", "MongoDB Compass"],
             "frameworks/Libraries" : ["bootstrap", "jQuery", "axios", "ReactJS", "ExpressJS", "NodeJS"],
-            "host" : ["MongoDB"]
+            "host" : ["Docker"]
         },
         "images" : []
     },
