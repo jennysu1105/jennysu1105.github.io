@@ -1,4 +1,22 @@
 {
+    "Dragonboat Website" : {
+        "date" : "August 2023 - Current",
+        "tags" : ["Web Development", "Databases", "UX/UI"],
+        "members": {"Ben Liu" : "https://github.com/PoutinePowder"},
+        "group" : "",
+        "desc" : "A team personal project where users can keep up with casual and competitive dragonboating topics in Toronto. The website keeps track of teams and news of the dragonboating scene.",
+        "goals" : {},
+        "learning" : {},
+        "status" : "In Progress",
+        "res" : {
+            "languages" : ["HTML", "CSS", "javascript"],
+            "applications" : ["Visual Studio Code"],
+            "frameworks/Libraries" : ["bootstrip", "jQuery"],
+            "host" : [""]
+        },
+        "images" : []
+    },
+
     "MyWebtoonList Web Application" : {
         "date" : "January 2023 - Current",
         "tags" : ["Web Development", "Databases", "UX/UI"],

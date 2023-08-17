@@ -1,13 +1,3 @@
-body {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    background: linear-gradient(
-        to bottom,
-        #273a63 0%,
-        #5a898c 100%
-    );
-}
-
 .bio {
     text-align: left;
 }
