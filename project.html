@@ -73,7 +73,7 @@
                     tags.innerHTML = '<ul><li class="menu">' + project['tags'].join('</li><li class="menu">') + "</li></ul>";
 
                     let size = document.getElementById('size');
-                    size.innerHTML = project['group'];
+                    size.innerHTML = Object.values(project['members']).length + 1;
                     
                     let members = document.getElementsByTagName("ul").namedItem("members");
                     if (Object.values(project['members']).length > 0){
