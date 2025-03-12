@@ -1,39 +1,20 @@
 {
-    "Dragonboat Website" : {
-        "date" : "August 2023 - Current",
-        "tags" : ["Web Development", "Databases", "UX/UI"],
-        "members": {"Ben Liu" : "https://github.com/PoutinePowder"},
-        "desc" : "A team personal project where users can keep up with casual and competitive dragonboating topics in Toronto. The website keeps track of teams and news of the dragonboating scene.",
-        "goals" : {},
-        "learning" : {},
-        "status" : "In Progress",
+    "Discord Bot Project" : {
+        "date" : "November 2024 - Current",
+        "tags" : ["Databases", "Discord Bot"],
+        "members": {},
+        "desc" : "This project is a Discord chat bot that can store information which will link to a website to view the information in the future.",
+        "goals" : {"Use Discord messaging to add to a database": ["Explore Discord as a platform for multiple people to add to/edit a collection of data, and store it in a json database."]},
+        "learning" : {"Experience with Discord python library": ["Using functions and objects from the library, I learned how to create message commands and tree commands (slash commands) which is makes the bot functional on Discord."]},
+        "status" : "Complete/In Progress",
         "res" : {
-            "languages" : ["HTML", "CSS", "javascript"],
-            "applications" : ["Visual Studio Code"],
-            "frameworks/Libraries" : ["bootstrip", "jQuery"],
-            "host" : [""]
+            "languages" : ["Python"],
+            "applications" : ["Discord", "Visual Studio Code"],
+            "frameworks/Libraries" : ["discord.py", "python-dotenv", "Flask", "typing", "python-dateutil"]
         },
         "images" : []
     },
 
-    "MyWebtoonList Web Application" : {
-        "date" : "January 2023 - Current",
-        "tags" : ["Web Development", "Databases", "UX/UI"],
-        "members": {},
-        "desc" : "A personal project where users can keep track of webtoons they are reading, plan to read, have completed and have dropped. The web app should keep track of details about the webtoons including: title, alternative titles, author, original language, characters, description, etc. Each webtoon should have their own page and be listed in the users' personal list with the webtoon title and author.",
-        "goals" : {"Create a MERN Stack application": ["The MERN Stack consist of the use of MongoDB. ExpressJS, ReactJS and NodeJS.", "These technologies will be used together to develop both the front-end and back-end of the website."], 
-        "Design a model schema for the database": ["Using MongoDB, store all information about each webtoon and user status on each one.", "Retrieve the information from the database server and display the information on the client application."], 
-        "Design the website" : ["Ensure navigation is simple and straightforward."]},
-        "learning" : {},
-        "status" : "In Progress",
-        "res" : {
-            "languages" : ["HTML", "CSS", "javascript"],
-            "applications" : ["Visual Studio Code", "MongoDB Compass"],
-            "frameworks/Libraries" : ["bootstrap", "jQuery", "axios", "ReactJS", "ExpressJS", "NodeJS"],
-            "host" : ["Docker"]
-        },
-        "images" : []
-    },
     "Web Application Project" : {
         "date" : "January 2023 - April 2023",
         "tags" : ["Web Development", "Databases", "UX/UI"],
