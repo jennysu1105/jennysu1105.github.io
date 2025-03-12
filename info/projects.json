@@ -12,7 +12,8 @@
             "applications" : ["Discord", "Visual Studio Code"],
             "frameworks/Libraries" : ["discord.py", "python-dotenv", "Flask", "typing", "python-dateutil"]
         },
-        "images" : []
+        "images" : [],
+        "link": "https://github.com/jennysu1105/kevin-jenny/tree/v1.0"
     },
 
     "Web Application Project" : {
@@ -31,7 +32,8 @@
             "host" : ["XAMPP", "MySQL"],
             "applications": ["Visual Studio Code"]
         },
-        "images" : ["login.png", "login_failed.png", "homepage_admin.png", "homepage_added_items.png", "homepage_user.png", "sale_page.png", "admin_dbmaintain.png", "shopping_cart.png", "checkout.png", "review_order.png", "review_order_map.png", "order_history.png", "rational_model_scheme.png", "database_scheme.png"]
+        "images" : ["login.png", "login_failed.png", "homepage_admin.png", "homepage_added_items.png", "homepage_user.png", "sale_page.png", "admin_dbmaintain.png", "shopping_cart.png", "checkout.png", "review_order.png", "review_order_map.png", "order_history.png", "rational_model_scheme.png", "database_scheme.png"],
+        "link": ""
     },
 
     "ECar App Project" : {
@@ -46,7 +48,8 @@
             "languages" : ["VB.NET (Visual Basics)"],
             "applications": ["Visual Studio 2022 IDE"]
         },
-        "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "rider_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "request_stop_confirmation.PNG", "chat_rider.PNG", "chat_owner.PNG"]
+        "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "rider_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "request_stop_confirmation.PNG", "chat_rider.PNG", "chat_owner.PNG"],
+        "link": ""
     },
 
     "Convention Centre DBMS" : {
@@ -62,7 +65,8 @@
             "applications" : ["SQL Developer", "Visual Studio Code"],
             "host" : ["Oracle Database"]
         },
-        "images" : []
+        "images" : [],
+        "link": ""
     },
 
     "SPLIT" : {
@@ -76,7 +80,8 @@
         "res" : {
             "applications" : ["Procreate", "PowerPoint"]
         },
-        "images" : ["logo_credits_yasmeen.PNG", "battle_interface.png", "city_square_sketch.png", "exploration_interface.png", "village_sketch.png", "one_page_proposal.png", "title_screenflow.png", "in_game_screenflow.png"]
+        "images" : ["logo_credits_yasmeen.PNG", "battle_interface.png", "city_square_sketch.png", "exploration_interface.png", "village_sketch.png", "one_page_proposal.png", "title_screenflow.png", "in_game_screenflow.png"],
+        "link": ""
     },
 
     "VRulez" : {
@@ -94,7 +99,8 @@
             "languages" : ["Wix Code"],
             "cms" : ["Wix"]
         },
-        "images" : ["home.png", "gamelist.png", "gamelist_expanded.png", "locations.png", "press.png"]
+        "images" : ["home.png", "gamelist.png", "gamelist_expanded.png", "locations.png", "press.png"],
+        "link": ""
     },
 
     "Tic-Tac-Toe App" : {
@@ -109,7 +115,8 @@
             "languages" : ["Java"],
             "applications" : ["Android Studio"]
         },
-        "images" : []
+        "images" : [],
+        "link": "https://github.com/jennysu1105/tictactoe_app"
     },
 
     "Elmia" : {
@@ -125,6 +132,7 @@
             "frameworks/Libraries" : ["pygame"],
             "applications": ["Wing IDE", "Paint.NET", "Bannedstory"]
         },
-        "images" : ["main_menu.PNG", "tutorial.PNG", "main_game.PNG", "teleport_mechanic.PNG", "energy_orb.PNG", "hostile_monster.PNG", "game_over_complete.PNG", "high_scores.PNG"]
+        "images" : ["main_menu.PNG", "tutorial.PNG", "main_game.PNG", "teleport_mechanic.PNG", "energy_orb.PNG", "hostile_monster.PNG", "game_over_complete.PNG", "high_scores.PNG"],
+        "link": "https://github.com/jennysu1105/elmia_game"
     }
 }

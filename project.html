@@ -50,6 +50,7 @@
                 $('button.info').css("background-color", "black");
                 $('button.info').css("color", "white");
             });
+
             $.ajax({
                 type: 'GET',
                 url: 'https://jennysu1105.github.io/info/projects.json',
@@ -122,6 +123,9 @@
                     $.each(project['images'], function(i, val){
                         gallery.innerHTML += '<div class="img shadow p-2 bg-white rounded"><figure><figcaption>' + val + '</figcaption><img class="gallery" id="gallery" src="' + src + val + '"></figure></div>';
                     });
+
+                    let view_project = document.getElementById('view-project');
+                    view_project.innerHTML = '<a href="' + project["link"] + '">View Project</a>'
                 }
             });
         });
@@ -161,6 +165,7 @@
             <div class="row" style="margin: 0 auto; padding-bottom: 20px;">
                 <div class="col"><button class="btn btn-dark btn-sm info">Info</button></div>
                 <div class="col"><button class="btn btn-dark btn-sm report">Report</button></div>
+                <div class="col" id="view-project"></div>
             </div>
         </div>
         <div id="info">
