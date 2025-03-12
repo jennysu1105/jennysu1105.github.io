@@ -6,7 +6,7 @@
         "desc" : "This project is a Discord chat bot that can store information which will link to a website to view the information in the future.",
         "goals" : {"Use Discord messaging to add to a database": ["Explore Discord as a platform for multiple people to add to/edit a collection of data, and store it in a json database."]},
         "learning" : {"Experience with Discord python library": ["Using functions and objects from the library, I learned how to create message commands and tree commands (slash commands) which is makes the bot functional on Discord."]},
-        "status" : "Complete/In Progress",
+        "status" : "In Progress",
         "res" : {
             "languages" : ["Python"],
             "applications" : ["Discord", "Visual Studio Code"],
