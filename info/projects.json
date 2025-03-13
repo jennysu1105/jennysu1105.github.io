@@ -33,7 +33,25 @@
             "applications": ["Visual Studio Code"]
         },
         "images" : ["login.png", "login_failed.png", "homepage_admin.png", "homepage_added_items.png", "homepage_user.png", "sale_page.png", "admin_dbmaintain.png", "shopping_cart.png", "checkout.png", "review_order.png", "review_order_map.png", "order_history.png", "rational_model_scheme.png", "database_scheme.png"],
-        "link": ""
+        "link": "https://github.com/jennysu1105/cps630-labs/tree/7a7c4487e93c8e0abe38ea7e2279c0769ae245c1/Project"
+    },
+
+    "Data Science Labs" : {
+        "date" : "January 2023 - April 2023",
+        "tags" : ["Databases", "Data Analysis", "Lab Collection"],
+        "members": {},
+        "desc" : "A collection of labs done for my Data Science labs using Python Notebooks.",
+        "goals" : {"Explore Data Analysis Methods": ["Learn to apply data analysis, statistical and machine learning models to analyze and make predictions on a collection of data.", "Includes: big data, data models, distributed computing, regression and statistical analysis, neural networks, learning models, natural language processing, recommendation systems and social graphs."]},
+        "learning" : {},
+        "status" : "Complete/In Progress",
+        "res" : {
+            "languages" : ["Python"],
+            "applications" : ["SQL Developer", "Python Notebook"],
+            "frameworks/Libraries" : ["pandas", "numpy", "matplotlib (Graph Visualization)", "scipy (Computing)", "seaborn (data visualization)", "re (Regular Expressions)", "kneed", "wordcount", "nltk (Natural Language Toolkit", "sklearn (Machine Learning)", "networkx (Network Analysis)"],
+            "host" : ["Oracle Database"]
+        },
+        "images" : [],
+        "link": "https://github.com/jennysu1105/cps521-labs"
     },
 
     "ECar App Project" : {
@@ -49,7 +67,7 @@
             "applications": ["Visual Studio 2022 IDE"]
         },
         "images" : ["my_car.PNG", "schedule.PNG", "unavailable_times.PNG", "add_unavailability.PNG", "edit_unavailability.PNG", "day_rides.PNG", "rider_profile.PNG", "search_for_ride.PNG", "ride_request.PNG", "ride_confirmation_owner.PNG", "ride_detail_rider.PNG", "ride_detail_owner.PNG", "car_controls.PNG", "add_stop_request.PNG", "request_stop_confirmation.PNG", "chat_rider.PNG", "chat_owner.PNG"],
-        "link": ""
+        "link": "https://github.com/jennysu1105/ECar-Prototype"
     },
 
     "Convention Centre DBMS" : {
@@ -66,7 +84,7 @@
             "host" : ["Oracle Database"]
         },
         "images" : [],
-        "link": ""
+        "link": "https://github.com/jennysu1105/convention-database"
     },
 
     "SPLIT" : {
