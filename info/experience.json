@@ -5,7 +5,9 @@
         "company" : "VRulez", 
         "location" : "Toronto, Ontario", 
         "description" : "VRulez is a Virtual Reality cafe that offers a unique and immersive experience for visitors with the world of virtual reality.",
-        "role" : ["designed and created the UX/UI of a Wix website",
-                "solved technical issues of KAT I/O machines and game software"]
+        "role" : ["Designed a website that allows customers to create bookings, view information about the cafe such as: the game catalog, locations and news",
+                "Focused on creating an informative and easy-to-navigate interface for customers to interact with",
+            "Worked in-store to guide and teach customers how to use the equipment as well as identifying and resolving any issues that arose efficiently with a positive and polite personality",
+        "Built using WIX and WIX Code"]
     }
 ]
