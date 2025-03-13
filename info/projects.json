@@ -43,7 +43,7 @@
         "desc" : "A collection of labs done for my Data Science labs using Python Notebooks.",
         "goals" : {"Explore Data Analysis Methods": ["Learn to apply data analysis, statistical and machine learning models to analyze and make predictions on a collection of data.", "Includes: big data, data models, distributed computing, regression and statistical analysis, neural networks, learning models, natural language processing, recommendation systems and social graphs."]},
         "learning" : {},
-        "status" : "Complete/In Progress",
+        "status" : "Complete",
         "res" : {
             "languages" : ["Python"],
             "applications" : ["SQL Developer", "Python Notebook"],
