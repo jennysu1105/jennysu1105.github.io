@@ -33,22 +33,22 @@
                 })
             });
 
-            let dropdown = ["Web Development", "Databases", "UX/UI", "Content Management System", "App Development", "Game Development"];
-            let select = document.getElementsByTagName("select")[0];
-            $.each(dropdown, function(i, val){
-                select.innerHTML += '<option value="' + val + '">' + val + '</option>';
-            });
 
             let projects = document.getElementById("projects");
+            let select = document.getElementsByTagName("select")[0];
             $.ajax({
                 type: "GET",
                 url: 'https://jennysu1105.github.io/info/projects.json',
                 dataType: 'json',
                 success : function(data){
+                    let dropdown = new Set();
                     $.each(data, function(i, val){
                         let top = '<a href="/project?name=' + i.replaceAll(" ", "_") + '"><section><div class="container-fluid mainbody shadow p-3 mb-2 rounded" id="projectClick">';
                         let name = '<h5 class="title">' + i + '</h5>';
                         let period = '<h6 class="date">' + val['date'] + '</h6>';
+                        val['tags'].forEach(tag => {
+                            dropdown.add(tag);
+                        });
                         let tags = '<p class="tags">' + val['tags'].join(", ") + "</p>";
                         let description = '<p>' + val['desc'] + '</p>';
                         let languages = '<p class="languages">' + Object.values(val['res']).flat(1).join(", ") + "</p>"
@@ -59,6 +59,9 @@
                         else {
                             projects.innerHTML += top + '<div class="row project"><div class="col-5 head">' + name + period + "<hr>" + tags + '</div><div class="col desc">' + description + "<hr>" + languages + '</div></div></section></a>';
                         }
+                    });
+                    dropdown.forEach(tag => {
+                        select.innerHTML += '<option value="' + tag + '">' + tag + '</option>';
                     });
                 }
             });
