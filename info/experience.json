@@ -1,5 +1,17 @@
 [
     {
+        "time": "2025 - Present",
+        "position" : ["Survey Director"],
+        "company" : "IncQuery",
+        "location" : "Remote",
+        "description" : "IncQuery is a platform which helps simplify and streamline survey-based research.",
+        "role" : ["Served clients as an advisor of survey architecture and provide real time support on program implementation",
+                "Managed multiple projects simultaneously - working to manage vendors and clients in a fast pace environment",
+                "Skills: Customer Service, Project Management, Consulting",
+                "Applications: Hubspot, Microsoft Excel",
+                "Languages: Python, JavaScipt, HTML, CSS"]
+    },
+    {
         "time": "2019 - 2020",
         "position" : ["Junior Web Developer", "Associate"],
         "company" : "VRulez", 
